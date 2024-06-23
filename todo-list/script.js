@@ -1,4 +1,4 @@
-//[{text: '洗衣服', checked: false}, {text: '寫文案', checked: true}]
+// [{text: '洗衣服', checked: false}, {text: '寫文案', checked: true}]
 let listState = [];
 
 const STATE_KEY = "todo-list";
@@ -62,7 +62,7 @@ function addItem() {
 
   listState.push({
     text,
-    checked: false
+    checked: false,
   });
   saveState(listState);
 
