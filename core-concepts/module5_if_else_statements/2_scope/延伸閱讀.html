@@ -1,0 +1,33 @@
+<script>function loadScriptOnce(src) {
+  // Check if the script is already loaded
+  const existingScripts = document.querySelectorAll("script");
+  for (let script of existingScripts) {
+    if (script.src === src) {
+      console.log("Script already loaded:", src);
+      resetEqationNumbers();
+      return; // Script is already loaded, so don't load it again
+    }
+  }
+
+  // If the script isn't loaded, create a new script element
+  const script = document.createElement("script");
+  script.src = src;
+  script.async = true;
+  script.onload = () => console.log("Script loaded:", src);
+  document.head.appendChild(script);
+}
+
+function resetEqationNumbers() {
+  if (window.MathJax) {
+    MathJax.Hub.Queue(
+      ["resetEquationNumbers", MathJax.InputJax.TeX],
+      ["Typeset", MathJax.Hub]
+    );
+  }
+}
+
+// Example usage with MathJax
+loadScriptOnce(
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"
+);
+</script><p>作用域：https://zh.wikipedia.org/wiki/%E4%BD%9C%E7%94%A8%E5%9F%9F</p>

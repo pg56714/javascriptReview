@@ -1,0 +1,36 @@
+<script>function loadScriptOnce(src) {
+  // Check if the script is already loaded
+  const existingScripts = document.querySelectorAll("script");
+  for (let script of existingScripts) {
+    if (script.src === src) {
+      console.log("Script already loaded:", src);
+      resetEqationNumbers();
+      return; // Script is already loaded, so don't load it again
+    }
+  }
+
+  // If the script isn't loaded, create a new script element
+  const script = document.createElement("script");
+  script.src = src;
+  script.async = true;
+  script.onload = () => console.log("Script loaded:", src);
+  document.head.appendChild(script);
+}
+
+function resetEqationNumbers() {
+  if (window.MathJax) {
+    MathJax.Hub.Queue(
+      ["resetEquationNumbers", MathJax.InputJax.TeX],
+      ["Typeset", MathJax.Hub]
+    );
+  }
+}
+
+// Example usage with MathJax
+loadScriptOnce(
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"
+);
+</script><p>延伸閱讀
+關於資料型別：https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Data_structures</p>
+<p>關於跳脫字元：https://zh.wikipedia.org/zh-tw/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6</p>
+<p>後續的章節還會繼續介紹其他型別，如果大家投資時間先讀一下，未來學習會更輕松喔！</p>

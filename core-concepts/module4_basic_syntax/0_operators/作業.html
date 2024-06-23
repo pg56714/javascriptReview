@@ -1,0 +1,70 @@
+<script>function loadScriptOnce(src) {
+  // Check if the script is already loaded
+  const existingScripts = document.querySelectorAll("script");
+  for (let script of existingScripts) {
+    if (script.src === src) {
+      console.log("Script already loaded:", src);
+      resetEqationNumbers();
+      return; // Script is already loaded, so don't load it again
+    }
+  }
+
+  // If the script isn't loaded, create a new script element
+  const script = document.createElement("script");
+  script.src = src;
+  script.async = true;
+  script.onload = () => console.log("Script loaded:", src);
+  document.head.appendChild(script);
+}
+
+function resetEqationNumbers() {
+  if (window.MathJax) {
+    MathJax.Hub.Queue(
+      ["resetEquationNumbers", MathJax.InputJax.TeX],
+      ["Typeset", MathJax.Hub]
+    );
+  }
+}
+
+// Example usage with MathJax
+loadScriptOnce(
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"
+);
+</script><script>function loadScriptOnce(src) {
+  // Check if the script is already loaded
+  const existingScripts = document.querySelectorAll("script");
+  for (let script of existingScripts) {
+    if (script.src === src) {
+      console.log("Script already loaded:", src);
+      resetEqationNumbers();
+      return; // Script is already loaded, so don't load it again
+    }
+  }
+
+  // If the script isn't loaded, create a new script element
+  const script = document.createElement("script");
+  script.src = src;
+  script.async = true;
+  script.onload = () => console.log("Script loaded:", src);
+  document.head.appendChild(script);
+}
+
+function resetEqationNumbers() {
+  if (window.MathJax) {
+    MathJax.Hub.Queue(
+      ["resetEquationNumbers", MathJax.InputJax.TeX],
+      ["Typeset", MathJax.Hub]
+    );
+  }
+}
+
+// Example usage with MathJax
+loadScriptOnce(
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"
+);
+</script><p>let x = 33; const y = x-1; console.log(x-3);</p>
+<p>console.log(x);//請問 x 是多少</p>
+<p>優先序 let y = 0 let x = 1 x = y = x + 1</p>
+<p>a 運算子的 precedence 為 3 b 運算子的 precedence 為 6</p>
+<p>5 a 4 b 8 的結果為多少？</p>
+<p>template string 延伸閱讀</p>
