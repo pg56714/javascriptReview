@@ -148,6 +148,35 @@ JSON.stringify(todoList);
 JSON.parse(todoList);
 ```
 
+## unit-test-jest
+
+```bash
+yarn add --dev jest
+```
+
+add to package.json
+
+```json
+"scripts": {
+  "test": "jest"
+}
+```
+
+```bash
+yarn test
+```
+
+first use
+
+```bash
+yarn install
+```
+
 ## Source
 
 [JavaScript-James-Kool](https://www.youtube.com/watch?v=vDNw0FWL8zw)
+
+[unittest-jest1](https://www.youtube.com/watch?v=OvT6d9vn7C0)
+[unittest-jest2](https://miahsuwork.medium.com/%E7%AC%AC%E4%B8%89%E9%80%B1-javascript-%E6%B8%AC%E8%A9%A6%E6%A1%86%E6%9E%B6-jest-eccf0ff2cea2)
+
+[package-lock.json-introduce](https://www.youtube.com/watch?v=MQkcoN9lEFc)
