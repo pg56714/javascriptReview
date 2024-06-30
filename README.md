@@ -180,3 +180,6 @@ yarn install
 [unittest-jest2](https://miahsuwork.medium.com/%E7%AC%AC%E4%B8%89%E9%80%B1-javascript-%E6%B8%AC%E8%A9%A6%E6%A1%86%E6%9E%B6-jest-eccf0ff2cea2)
 
 [package-lock.json-introduce](https://www.youtube.com/watch?v=MQkcoN9lEFc)
+
+[closure-introduce1](https://www.youtube.com/watch?v=0rP4YzGdvEU)
+[closure-introduce2](https://blog.jameskool.com/blog/closure)
