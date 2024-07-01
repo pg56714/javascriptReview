@@ -183,3 +183,6 @@ yarn install
 
 [closure-introduce1](https://www.youtube.com/watch?v=0rP4YzGdvEU)
 [closure-introduce2](https://blog.jameskool.com/blog/closure)
+
+[Regular-Expressions1](https://www.youtube.com/watch?v=n_6TayWu6do)
+[Regular-Expressions2](https://blog.jameskool.com/blog/regex)
